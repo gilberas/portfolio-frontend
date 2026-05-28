@@ -21,7 +21,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        ''https://portfolio-backend-bfgi.onrender.com/api/contact',
+        'https://portfolio-backend-bfgi.onrender.com/api/contact',
         {
           method: 'POST',
           headers: {
