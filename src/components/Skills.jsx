@@ -1,5 +1,5 @@
 // src/components/Skills.jsx  — fixes the missing {skill} text bug
-import skills from '../data/skills'
+import skills from '../data/Skills'
 
 function Skills() {
   return (
