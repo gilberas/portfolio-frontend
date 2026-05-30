@@ -213,17 +213,7 @@ export default function Footer() {
             <span className="gl-footer__copy-name">Dar es Salaam</span>.
           </p>
           <div className="gl-footer__bottom-links">
-            <button className="gl-footer__blink" onClick={() => scrollTo("#contact")}>
-              Contact
-            </button>
-            <a
-              className="gl-footer__blink"
-              href="/cv/Gilbert_Isidory_CV_v5.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download CV
-            </a>
+           
             <button className="gl-footer__blink" onClick={backToTop}>
               Back to top ↑
             </button>
