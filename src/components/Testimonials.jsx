@@ -13,7 +13,7 @@ const testimonials = [
   {
     name: 'Brian Mollel',
     role: 'Business Owner',
-    company: 'Client — E-Commerce Website',
+    company: 'Client — E-Commerce system',
     initials: 'BM',
     color: '#f0bc2e',
     bgColor: '#2d2200',

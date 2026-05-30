@@ -31,7 +31,7 @@ const timeline = [
   },
   {
     year: "2025",
-    title: "InventoryPro & E-Commerce Website",
+    title: "InventoryPro & E-Commerce system",
     place: "Personal / Client Projects",
     description:
       "Developed InventoryPro — a multi-warehouse inventory system with purchase order workflows, stock tracking, and real-time dashboard. Also built a full e-commerce platform with product catalog, cart, secure checkout, and order management.",
@@ -47,24 +47,7 @@ const timeline = [
     type: "project",
     icon: "🤝",
   },
-  {
-    year: "2022",
-    title: "A-Level — PCM Combination",
-    place: "Shinyanga Secondary School, Shinyanga",
-    description:
-      "Completed Advanced Level Certificate of Secondary Education (ACSEE) with Physics, Chemistry, and Mathematics combination. Division III — 13 Points.",
-    type: "education",
-    icon: "📗",
-  },
-  {
-    year: "2017",
-    title: "O-Level Secondary Education",
-    place: "Ngokolo Secondary School, Shinyanga Region",
-    description:
-      "Completed Ordinary Level Certificate of Secondary Education (CSEE). Division II — 18 Points.",
-    type: "education",
-    icon: "📚",
-  },
+  
 ];
 
 const TYPE_STYLES = {

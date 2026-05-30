@@ -29,7 +29,7 @@ const SOCIALS = [
     icon:  "ti-brand-linkedin",
     label: "LinkedIn",
     // ✅ Replace 'gilbertlyimo' with your actual LinkedIn username
-    href:  "https://linkedin.com/in/GILBERT LYIMO",
+    href:  "https://linkedin.com/in/GILBERT ISIDORY",
   },
   {
     icon:  "ti-brand-whatsapp",
@@ -218,7 +218,7 @@ export default function Footer() {
             </button>
             <a
               className="gl-footer__blink"
-              href="/cv/Gilbert_Isidory_CV.pdf"
+              href="/cv/Gilbert_Isidory_CV_v5.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

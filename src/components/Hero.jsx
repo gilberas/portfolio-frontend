@@ -38,7 +38,7 @@ function Hero() {
               {/* ── CV Download ── put your CV PDF in public/cv/Gilbert_Lyimo_CV.pdf */}
               <a
                href="/CV/Gilbert_Isidory_CV_v2.pdf"
-  download="Gilbert_Isidory_CV.pdf"
+  download="Gilbert_Isidory_CV_v5.pdf"
   className="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-cyan-500 px-8 py-4 rounded-xl font-semibold transition"
 >
   <span>⬇️</span> Download CV
