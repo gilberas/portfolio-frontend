@@ -448,3 +448,42 @@
   color: var(--txt-bright);
   background: var(--navy-light);
 }
+/* ═══════════════════════════════════════════════
+   Light mode overrides for Footer
+   ═══════════════════════════════════════════════ */
+html.light .gl-footer {
+  --navy:        #f0f4f8;
+  --navy-mid:    #e8eef5;
+  --navy-light:  #dde4ed;
+  --navy-border: #c8d4e0;
+  --blue:        #0891b2;
+  --blue-hover:  #0e7490;
+  --gold:        #b45309;
+  --gold-dim:    #92400e;
+  --white:       #0f172a;
+  --txt-bright:  #1e293b;
+  --txt-mid:     #475569;
+  --txt-dim:     #94a3b8;
+}
+
+html.light .gl-footer {
+  background: var(--navy);
+}
+
+html.light .gl-footer__hire {
+  background: var(--navy-mid);
+  border-color: var(--navy-border);
+}
+
+html.light .gl-footer__soc {
+  border-color: var(--navy-border);
+  color: var(--txt-mid);
+}
+
+html.light .gl-footer__stats {
+  border-color: var(--navy-border);
+}
+
+html.light .gl-footer__stat {
+  border-right-color: var(--navy-border);
+}

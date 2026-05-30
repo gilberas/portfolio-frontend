@@ -4,14 +4,109 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ── Dark mode (default) ── */
+:root,
+html.dark {
+  --bg-base:        #0f172a;
+  --bg-section:     #1e293b;
+  --bg-card:        #0f172a;
+  --bg-input:       #020617;
+  --border:         #1e293b;
+  --border-input:   #334155;
+  --text-primary:   #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted:     #94a3b8;
+  --accent:         #22d3ee;
+  --accent-hover:   #06b6d4;
+  --accent-bg:      rgba(34,211,238,0.1);
+  --nav-bg:         rgba(15,23,42,0.9);
+  --shadow-accent:  rgba(34,211,238,0.3);
+}
+
+/* ── Light mode ── */
+html.light {
+  --bg-base:        #f0f4f8;
+  --bg-section:     #ffffff;
+  --bg-card:        #f8fafc;
+  --bg-input:       #ffffff;
+  --border:         #e2e8f0;
+  --border-input:   #cbd5e1;
+  --text-primary:   #0f172a;
+  --text-secondary: #334155;
+  --text-muted:     #64748b;
+  --accent:         #0891b2;
+  --accent-hover:   #0e7490;
+  --accent-bg:      rgba(8,145,178,0.1);
+  --nav-bg:         rgba(240,244,248,0.92);
+  --shadow-accent:  rgba(8,145,178,0.25);
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #0f172a;
-  color: white;
+  background: var(--bg-base);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.35s ease, color 0.35s ease;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* ── Tailwind overrides — key sections respond to theme ── */
+
+/* backgrounds */
+html.light .bg-slate-950  { background-color: var(--bg-base)    !important; }
+html.light .bg-slate-900  { background-color: var(--bg-section) !important; }
+html.light .bg-slate-800  { background-color: #e2e8f0           !important; }
+html.light .bg-slate-800\/50 { background-color: rgba(226,232,240,0.6) !important; }
+html.light .bg-slate-800\/80 { background-color: rgba(226,232,240,0.9) !important; }
+
+/* card / input */
+html.light .bg-slate-950.border,
+html.light .bg-slate-900.border { background-color: var(--bg-card) !important; }
+
+/* text */
+html.light .text-white      { color: var(--text-primary)   !important; }
+html.light .text-slate-300  { color: var(--text-secondary) !important; }
+html.light .text-slate-400  { color: var(--text-muted)     !important; }
+
+/* borders */
+html.light .border-slate-800 { border-color: var(--border) !important; }
+html.light .border-slate-700 { border-color: #cbd5e1       !important; }
+html.light .border-slate-700\/80 { border-color: rgba(203,213,225,0.8) !important; }
+
+/* accent cyan */
+html.light .text-cyan-400  { color: var(--accent)       !important; }
+html.light .text-cyan-300  { color: var(--accent)       !important; }
+html.light .bg-cyan-500    { background-color: var(--accent-hover) !important; }
+html.light .hover\:bg-cyan-600:hover { background-color: var(--accent) !important; }
+html.light .border-cyan-500 { border-color: var(--accent) !important; }
+
+/* navbar */
+html.light nav.fixed       { background-color: var(--nav-bg) !important; border-color: #e2e8f0 !important; }
+html.light nav a           { color: var(--text-secondary) !important; }
+html.light nav a:hover     { color: var(--accent) !important; }
+html.light nav h1          { color: var(--accent) !important; }
+
+/* contact form inputs */
+html.light input,
+html.light textarea {
+  background-color: var(--bg-input) !important;
+  border-color: var(--border-input) !important;
+  color: var(--text-primary) !important;
+}
+html.light input::placeholder,
+html.light textarea::placeholder { color: var(--text-muted) !important; }
+
+/* skill bars track */
+html.light .bg-slate-800.rounded-full { background-color: #dde3ea !important; }
+
+/* timeline cards */
+html.light .bg-slate-800\/50 { background-color: rgba(255,255,255,0.8) !important; }
+
+/* transition everything smoothly */
+section, nav, div, input, textarea, button, a, span {
+  transition: background-color 0.35s ease, border-color 0.35s ease, color 0.2s ease;
 }

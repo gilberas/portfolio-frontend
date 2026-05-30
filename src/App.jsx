@@ -1,6 +1,4 @@
-// src/App.jsx — REPLACE your existing App.jsx
-// ThemeContext moved inline — no separate context folder needed
-
+// src/App.jsx
 import { createContext, useContext, useEffect, useState } from 'react'
 
 import Navbar from './components/Navbar'
@@ -14,9 +12,7 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
-import ThemeToggle from './components/ThemeToggle'
 
-// ── Theme context defined right here — no extra folder needed ──
 export const ThemeContext = createContext()
 
 export function useTheme() {
@@ -26,22 +22,29 @@ export function useTheme() {
 function App() {
   const [dark, setDark] = useState(true)
 
+  // Load saved preference on mount
   useEffect(() => {
     const saved = localStorage.getItem('theme')
     if (saved) setDark(saved === 'dark')
   }, [])
 
+  // Apply class to <html> whenever dark changes
   useEffect(() => {
     localStorage.setItem('theme', dark ? 'dark' : 'light')
-    document.documentElement.classList.toggle('dark', dark)
+    const html = document.documentElement
+    if (dark) {
+      html.classList.add('dark')
+      html.classList.remove('light')
+    } else {
+      html.classList.add('light')
+      html.classList.remove('dark')
+    }
   }, [dark])
 
   return (
     <ThemeContext.Provider value={{ dark, setDark }}>
-      {/* Cyan scroll progress bar fixed at very top */}
       <ScrollProgress />
-
-      <div className="bg-slate-950 text-white min-h-screen">
+      <div className="min-h-screen" style={{ background: 'var(--bg-base)', color: 'var(--text-primary)' }}>
         <Navbar />
         <Hero />
         <About />
