@@ -42,11 +42,11 @@ function Projects() {
                 </a>
 
                 <a
-                  href={project.demo}
+                    href={project.demo}
                   className="border border-cyan-500 px-4 py-2 rounded-lg text-sm font-semibold"
                 >
-                  Live Demo
-                </a>
+                  Coming soon
+            </a>
               </div>
             </div>
           ))}
