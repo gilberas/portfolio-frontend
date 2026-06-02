@@ -8,7 +8,6 @@ import Timeline from './components/Timeline'
 import Skills from './components/Skills'
 import SkillBars from './components/SkillBars'
 import Projects from './components/Projects'
-import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
@@ -52,7 +51,6 @@ function App() {
         <Skills />
         <SkillBars />
         <Projects />
-        <Testimonials />
         <Contact />
         <Footer />
       </div>
