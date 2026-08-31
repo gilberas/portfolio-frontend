@@ -4,16 +4,16 @@ import { useEffect, useRef, useState } from "react";
 const timeline = [
  {
   year: "2026",
-  title: "Final Year Student — BSc. Data Science",
+  title: "BDTS — Graduate",
   place: "Eastern Africa Statistical Training Centre (EASTC)",
   description:
-    "Currently in my final year pursuing a Bachelor of Science in Data Science. Expected to graduate in 2026. Focusing on statistical analysis, machine learning, database systems, and full-stack web development.",
+    "Graduated with a Bachelor Degree in Data Science (BDTS). Focused on statistical analysis, machine learning, database systems, and full-stack web development.",
   type: "education",
   icon: "🎓",
 },
   {
     year: "2025",
-    title: "School Management System",
+    title: "Shule",
     place: "Freelance Project",
     description:
       "Built a comprehensive school administration system using Laravel + Livewire covering student enrollment, attendance, exams, results, fee collection, timetables, and role-based access for admins, teachers, finance officers, and parents.",
@@ -31,10 +31,10 @@ const timeline = [
   },
   {
     year: "2025",
-    title: "InventoryPro & E-Commerce system",
-    place: "Personal / Client Projects",
+    title: "InventoryPro",
+    place: "Personal / Client Project",
     description:
-      "Developed InventoryPro — a multi-warehouse inventory system with purchase order workflows, stock tracking, and real-time dashboard. Also built a full e-commerce platform with product catalog, cart, secure checkout, and order management.",
+      "Developed InventoryPro — a multi-warehouse inventory system with purchase order workflows, stock tracking, and real-time dashboard.",
     type: "project",
     icon: "🚀",
   },

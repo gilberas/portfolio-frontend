@@ -79,21 +79,13 @@ function Projects() {
               key={project.title}
               className="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 flex flex-col"
             >
-              {/* Screenshot or placeholder */}
-              {project.screenshot ? (
+              {/* Project image if available */}
+              {project.screenshot && (
                 <img
                   src={project.screenshot}
                   alt={`${project.title} screenshot`}
                   className="w-full h-44 object-cover object-top"
                 />
-              ) : (
-                <div className="w-full h-44 bg-slate-800 flex flex-col items-center justify-center gap-2 border-b border-slate-700">
-                  <svg className="w-8 h-8 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <path strokeLinecap="round" d="M3 9h18M9 21V9" />
-                  </svg>
-                  <span className="text-slate-600 text-xs">Screenshot coming soon</span>
-                </div>
               )}
 
               {/* Card body */}
@@ -123,16 +115,28 @@ function Projects() {
                   ))}
                 </div>
 
-                {/* GitHub button */}
-                <div className="mt-auto">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-lg text-sm font-semibold transition"
-                  >
-                    GitHub
-                  </a>
+                {/* Buttons */}
+                <div className="mt-auto flex flex-wrap gap-3">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-lg text-sm font-semibold transition"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block border border-cyan-500 hover:bg-cyan-500/10 px-4 py-2 rounded-lg text-sm font-semibold transition"
+                    >
+                      View Project
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -12,8 +12,7 @@ const NAV_LINKS = [
 
 const PROJECTS = [
   { title: "InternConnect Platform",   tags: "React · Node.js · Express · MySQL",    color: "#1E6FA6", href: "#projects" },
-  { title: "E-Commerce Website",       tags: "React · Laravel · MySQL",              color: "#C9A84C", href: "#projects" },
-  { title: "School Management System", tags: "Laravel · Livewire · MySQL · Flux UI", color: "#4CAF50", href: "#projects" },
+  { title: "Shule",                    tags: "Laravel · Livewire · MySQL · Flux UI", color: "#4CAF50", href: "#projects" },
   { title: "InventoryPro",             tags: "React · Node.js · Express · MySQL",    color: "#E24B4A", href: "#projects" },
 ];
 
@@ -53,7 +52,7 @@ const SOCIALS = [
 
 const STATS = [
   { value: "3+", label: "Months at TRA"    },
-  { value: "4+", label: "Projects ongoing" },
+  { value: "7+", label: "Projects" },
   { value: "2",  label: "Languages"        },
 ];
 

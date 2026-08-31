@@ -91,7 +91,7 @@ function Hero() {
 
               {/* Floating badge — projects */}
               <div className="absolute top-6 -left-4 bg-slate-900 border border-slate-700 rounded-xl px-4 py-2 text-center shadow-lg">
-                <span className="text-cyan-400 text-xl font-bold block">4</span>
+                <span className="text-cyan-400 text-xl font-bold block">7</span>
                 <span className="text-slate-400 text-xs">Projects</span>
               </div>
 

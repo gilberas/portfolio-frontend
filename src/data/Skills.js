@@ -27,13 +27,6 @@ const skills = {
     'Map Digitization', 'Raster & Vector Analysis', 'OpenStreetMap',
   ],
 
-  'Networking': [
-    'Network Configuration', 'Network Troubleshooting',
-    'TCP/IP', 'DNS & DHCP', 'VLANs', 'Subnetting',
-    'Cisco Packet Tracer', 'Network Security', 'Firewall Configuration',
-    'Wi-Fi Setup & Management',
-  ],
-
   'Tools & DevOps': [
     'Git', 'GitHub', 'VS Code', 'Postman',
     'Linux (Ubuntu)', 'Docker (Basics)',

@@ -12,7 +12,6 @@ const proficiencies = [
   { skill: 'Python',           level: 75, color: 'from-yellow-500 to-amber-400' },
   { skill: 'Machine Learning', level: 65, color: 'from-purple-500 to-violet-400' },
   { skill: 'QGIS',             level: 70, color: 'from-teal-500 to-green-400' },
-  { skill: 'Networking',       level: 72, color: 'from-indigo-500 to-blue-400' },
 ]
 
 function SkillBar({ skill, level, color, animate }) {
