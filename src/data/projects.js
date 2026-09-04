@@ -5,7 +5,7 @@ const projects = [
       "A modern hotel reservation platform that allows customers to search hotels, explore rooms and amenities, check availability, and make room bookings online.",
     tech: ["Laravel", "React.js", "MySQL", "PHP", "Tailwind CSS", "Vite"],
     github: "https://github.com/gilberas",
-    live: "https://github.com/gilberas",
+    live: "https://booking-system-5.onrender.com",
     status: "Completed",
     screenshot: null,
     features: [
@@ -23,7 +23,7 @@ const projects = [
       "An event discovery and ticket-booking platform that enables users to discover events, purchase tickets, select seats, and access digital tickets with QR codes.",
     tech: ["Laravel", "React.js", "MySQL", "TypeScript", "Tailwind CSS", "Vite", "PHP"],
     github: "https://github.com/gilberas",
-    live: "https://github.com/gilberas",
+    live: "https://eventhub.gilber.me",
     status: "Completed",
     screenshot: null,
     features: [
@@ -41,7 +41,7 @@ const projects = [
       "An AI-powered WhatsApp automation platform that helps businesses automate customer communication, answer FAQs, and provide intelligent responses through WhatsApp.",
     tech: ["Laravel", "React.js", "MySQL", "PHP", "TypeScript", "WhatsApp Cloud API", "AI APIs", "REST APIs"],
     github: "https://github.com/gilberas",
-    live: "https://github.com/gilberas",
+    live: "https://smart-business-assistant-en3y.onrender.com",
     status: "Completed",
     screenshot: null,
     features: [
@@ -77,7 +77,7 @@ const projects = [
       "A platform connecting students with internship opportunities. Features include company listings, student profiles, application tracking, and real-time notifications.",
     tech: ["React", "Node.js", "Express", "MySQL"],
     github: "https://github.com/gilberas/internconnect",
-    live: "https://github.com/gilberas/internconnect",
+    live: "https://internconnect-1-alit.onrender.com",
     status: "Completed",
     screenshot: null,
     features: [
@@ -94,7 +94,7 @@ const projects = [
       "A comprehensive school administration system handling student enrollment, attendance, exams, results, fee collection, timetables, and role-based access.",
     tech: ["Laravel", "Livewire", "MySQL", "Flux UI"],
     github: "https://github.com/gilberas/school-management-system",
-    live: "https://github.com/gilberas/school-management-system",
+    live: "https://shule.gilber.me",
     status: "Completed",
     screenshot: null,
     features: [
@@ -112,7 +112,7 @@ const projects = [
       "A stock management system for tracking inventory across multiple locations. Features include purchase orders, stock levels, expiry tracking, and supplier management.",
     tech: ["Laravel", "Livewire", "MySQL", "Flux UI"],
     github: "https://github.com/gilberas/inventory",
-    live: "https://github.com/gilberas/inventory",
+    live: "https://inventory-o8ow.onrender.com",
     status: "Completed",
     screenshot: null,
     features: [
